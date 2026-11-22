@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f8fa; color: #1a2431; font: 1rem/1.5 system-ui, sans-serif; }
+main { max-width: 70rem; margin: 2rem auto; padding: 0 1rem; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: 1rem; align-items: start; }
+section, form, aside { background: white; border: 1px solid #d7dde5; padding: 1rem; margin-bottom: 1rem; }
+section section { padding: 0; border: 0; }
+h2 { margin: 0 0 .75rem; font-size: 1.15rem; }
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.controls, .actions { display: flex; flex-wrap: wrap; gap: .75rem; align-items: end; }
+label { display: grid; gap: .2rem; }
+.checkbox { display: flex; align-items: center; padding: .4rem 0; }
+button, input, select { font: inherit; }
+button, input:not([type=checkbox]), select { max-width: 100%; padding: .3rem .5rem; }
+button { cursor: pointer; }
+button:disabled { cursor: default; }
+.books { padding: 0; list-style: none; }
+.books li { border-top: 1px solid #d7dde5; padding: .75rem 0; display: grid; gap: .5rem; }
+[role=alert] { color: #a22020; }
+@media (max-width: 740px) { .layout { grid-template-columns: 1fr; } }
